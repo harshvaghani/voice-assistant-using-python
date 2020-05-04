@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="" id="num" onkeyup="ischeck()" ><span id="hello" >
+    </span>
+</body>
+<script>
+
+    function ischeck() {
+        var num = document.getElementById('num').value;
+        if(num % 2 === 0 ){
+            document.getElementById('hello').innerHTML = "the number "+num+ " is even"
+        }
+        else {
+            document.getElementById('hello').innerHTML = "the number "+num+ " is odd"
+        }
+        if(num == "" ){
+            document.getElementById('hello').innerHTML = " Enter the value"
+        }
+    }
+</script>
+</html>
